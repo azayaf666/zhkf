@@ -1,3 +1,6 @@
+import 'babel-polyfill';
+if (Number.parseInt === undefined) Number.parseInt = window.parseInt;
+if (Number.parseFloat === undefined) Number.parseFloat = window.parseFloat;
 import Vue from 'vue'
 import App from './App.vue'
 import ElementUI from 'element-ui';
